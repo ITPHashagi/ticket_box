@@ -1,9 +1,20 @@
 import "./App.css";
+import "./input.css";
+import Header from "./header";
+import Content from "./content";
+import Footer from "./footer";
 
 function App() {
   return (
     <>
-      <h1 className="p-4">Hello world</h1>
+      <div
+        className="w-full min-h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('./glassesImage/background.jpg')" }}
+      >
+        <Header />
+        <Content />
+        <Footer />
+      </div>
     </>
   );
 }
