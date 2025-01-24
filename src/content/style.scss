@@ -1,0 +1,42 @@
+/* Container bao quanh các ghế */
+.seat-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 cột đều nhau */
+  gap: 10px; /* Khoảng cách giữa các ghế */
+  justify-content: center; /* Canh giữa toàn bộ hàng ghế */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  padding: 20px;
+  background-image: url('cinema-background.jpg'); /* Ảnh nền rạp chiếu phim */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Kiểu dáng ghế */
+.seat {
+  background-color: #4caf50; /* Màu ghế trống */
+  border: none;
+  border-radius: 5px;
+  width: 31px; /* Kích thước đều nhau */
+  height: 31px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Ghế đã đặt */
+.seatSold {
+  background-color: #f44336;
+  cursor: not-allowed;
+}
+
+/* Ghế đang chọn */
+.seatChoosing {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Trạng thái ghế vô hiệu hóa */
+.seat:disabled {
+  opacity: 0.6;
+}
